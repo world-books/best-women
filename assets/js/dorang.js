@@ -12,9 +12,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
- // toggle 
+ // toggle
 $(document).ready(function(){
-    
+
     $('.search-toggle').click(function(){
         $('.search-wrapper').toggleClass('show');
     });
@@ -35,7 +35,8 @@ $(document).ready(function(){
         $('body').removeClass('dark-theme');
     });
     $('.dark').click(function(){
-        $('body').toggleClass('dark-theme');
+        // $('body').toggleClass('dark-theme');
+        $('body').addClass('dark-theme');
         $('body').removeClass('light-theme');
     });
 });
@@ -57,6 +58,6 @@ $(document).ready(function(){
             }, 700, function(){
                 window.location.hash = hash;
             });
-        } 
+        }
     });
-}); 
+});
